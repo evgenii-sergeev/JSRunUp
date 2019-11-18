@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+
+var n = 0;
+
+var userAnswer = prompt('Do you want to paly?');
+
+do {
+    if (userAnswer == 'no') { 
+        alert('Lucky you!');
+        break;
+    } else if ((Math.random() * 6) < 1) {
+            alert('You are dead');
+            break;
+            }
+    n++
+    userAnswer = prompt('Lucky you! Do you want one more?');
+} while(true);
+
+alert('You have done ' + n + ' rounds');
+
+</script>

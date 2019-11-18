@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+
+    var deposit = parseInt(prompt('Enter the amount for deposit'));
+    var period = parseInt(prompt('Enter a period for the depoist'));
+    var interest = parseInt(prompt('Enter interest rate'));
+
+    for (var i = 0; i < period; i++) {
+        deposit = deposit + deposit * (interest/100);
+    }
+
+    alert(deposit);
+
+</script>
